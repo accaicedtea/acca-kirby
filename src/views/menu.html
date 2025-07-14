@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Vecchio Torchio - Menu Completo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Rye&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="menu-container">
+        <div class="stamp">ARTIGIANALE<br>dal 1987</div>
+        <div class="beer-icon"><i class="fas fa-beer"></i></div>
+
+        <div class="header">
+            <h1>IL VECCHIO TORCHIO</h1>
+            <p>Birre artigianali, panini rustici e specialità della casa in un'atmosfera autentica</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Navigation -->
+        <div class="nav-container">
+            <div class="nav-scroller">
+                <a href="#panini" class="nav-link active"><i class="fas fa-hamburger"></i> Panini</a>
+                <a href="#pizze" class="nav-link"><i class="fas fa-pizza-slice"></i> Pizze</a>
+                <a href="#insalate" class="nav-link"><i class="fas fa-leaf"></i> Insalate</a>
+                <a href="#piadine" class="nav-link"><i class="fas fa-bread-slice"></i> Piadine</a>
+                <a href="#bruschette" class="nav-link"><i class="fas fa-apple-alt"></i> Bruschette</a>
+                <a href="#antipasti" class="nav-link"><i class="fas fa-utensils"></i> Antipasti</a>
+                <a href="#menufissi" class="nav-link"><i class="fas fa-utensil-spoon"></i> Menu Fissi</a>
+                <a href="#birre" class="nav-link"><i class="fas fa-beer"></i> Birre</a>
+                <a href="#allergeni" class="nav-link"><i class="fas fa-allergies"></i> Allergeni</a>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Panini Category -->
+        <div class="category" id="panini">
+            <h2 class="category-title"><i class="fas fa-hamburger"></i> Panini Rustici</h2>
+
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">TITTY</div>
+                        <div class="item-description">Burger di manzo, frittatina, bacon, provola, maionese, ketchup, iceberg</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Glutine"><i class="fas fa-bread-slice"></i></span>
+                            <span class="allergen-icon" title="Latte"><i class="fas fa-cheese"></i></span>
+                            <span class="allergen-icon" title="Uova"><i class="fas fa-egg"></i></span>
+                            <span class="allergen-icon" title="Senape"><i class="fas fa-mortar-pestle"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€15,00</div>
+                </div>
+
+                <!-- Other panini items here -->
+            </div>
+
+            <div class="sauces-note">
+                <strong>AGGIUNGI SALSE:</strong> maionese, ketchup, senape, BBQ, guacamole, salsa yogurt, tabasco, salsa piccante
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Pizze Category -->
+        <div class="category" id="pizze">
+            <h2 class="category-title"><i class="fas fa-pizza-slice"></i> Pizze del Forno</h2>
+
+            <!-- Pizza items here -->
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Insalate Maxi Category -->
+        <div class="category" id="insalate">
+            <h2 class="category-title"><i class="fas fa-leaf"></i> Insalate Maxi</h2>
+
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">TIPRETENDO</div>
+                        <div class="item-description">Lattuga iceberg, rughetta, radicchio, tonno, fior di latte, uovo sodo, pomodoro</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Pesce"><i class="fas fa-fish"></i></span>
+                            <span class="allergen-icon" title="Latte"><i class="fas fa-cheese"></i></span>
+                            <span class="allergen-icon" title="Uova"><i class="fas fa-egg"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€13,50</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">ALBACHIARA</div>
+                        <div class="item-description">Rughetta, polpa di granchio, gamberetti, arancio</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Crostacei"><i class="fas fa-shrimp"></i></span>
+                            <span class="allergen-icon" title="Pesce"><i class="fas fa-fish"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€14,00</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">SOLITUDINE</div>
+                        <div class="item-description">Lattuga iceberg, rughetta, radicchio, mais, carote, pomodoro</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Vegetariano"><i class="fas fa-seedling"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€12,00</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">FARFALLINA</div>
+                        <div class="item-description">Rughetta, gamberetti, salsa rosa</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Crostacei"><i class="fas fa-shrimp"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€13,50</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">REWIND</div>
+                        <div class="item-description">Lattuga iceberg, wurstel, olive nere, uovo sodo, fontina, mais</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Latte"><i class="fas fa-cheese"></i></span>
+                            <span class="allergen-icon" title="Uova"><i class="fas fa-egg"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€12,50</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">O'PACHINO 'NNAMURATO</div>
+                        <div class="item-description">Lattuga iceberg, rughetta, pomodori ciliegino, bufala, olive nere</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Latte"><i class="fas fa-cheese"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€13,00</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">BEACH ON THE BEACH</div>
+                        <div class="item-description">Lattuga iceberg, gamberetti, pomodori ciliegino, mais</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Crostacei"><i class="fas fa-shrimp"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€13,50</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">VUOTO A PERDERE</div>
+                        <div class="item-description">Rughetta, bresaola, parmigiano</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Latte"><i class="fas fa-cheese"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€12,00</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">DICICHE</div>
+                        <div class="item-description">Lattuga iceberg, tonno, pomodori ciliegino, fior di latte, olive nere</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Pesce"><i class="fas fa-fish"></i></span>
+                            <span class="allergen-icon" title="Latte"><i class="fas fa-cheese"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€13,50</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">TRAP</div>
+                        <div class="item-description">Lattuga iceberg, pomodori ciliegino, mais, tonno, noci</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Pesce"><i class="fas fa-fish"></i></span>
+                            <span class="allergen-icon" title="Frutta a guscio"><i class="fas fa-cookie"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€14,00</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Piadine Category -->
+        <div class="category" id="piadine">
+            <h2 class="category-title"><i class="fas fa-bread-slice"></i> Piadine Artigianali</h2>
+
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">MOZZARELLA FIOR DI LATTE, CRUDO E RUGHETTA</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Glutine"><i class="fas fa-bread-slice"></i></span>
+                            <span class="allergen-icon" title="Latte"><i class="fas fa-cheese"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€8,50</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">POMODORO E MOZZARELLA FIOR DI LATTE</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Glutine"><i class="fas fa-bread-slice"></i></span>
+                            <span class="allergen-icon" title="Latte"><i class="fas fa-cheese"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€8,00</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">BRESAOLA, RUGHETTA E PARMIGIANO</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Glutine"><i class="fas fa-bread-slice"></i></span>
+                            <span class="allergen-icon" title="Latte"><i class="fas fa-cheese"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€9,00</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">STRACCHINO E CRUDO</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Glutine"><i class="fas fa-bread-slice"></i></span>
+                            <span class="allergen-icon" title="Latte"><i class="fas fa-cheese"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€8,50</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">STRACCHINO COTTO E RUGHETTA</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Glutine"><i class="fas fa-bread-slice"></i></span>
+                            <span class="allergen-icon" title="Latte"><i class="fas fa-cheese"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€8,50</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">STRACCHINO CRUDO E RUGHETTA</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Glutine"><i class="fas fa-bread-slice"></i></span>
+                            <span class="allergen-icon" title="Latte"><i class="fas fa-cheese"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€8,50</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">MOZZARELLA FIOR DI LATTE E CRUDO</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Glutine"><i class="fas fa-bread-slice"></i></span>
+                            <span class="allergen-icon" title="Latte"><i class="fas fa-cheese"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€8,50</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-name">
+                        <div class="name">MOZZARELLA FIOR DI LATTE E COTTO</div>
+                        <div class="allergens">
+                            <span class="allergen-icon" title="Glutine"><i class="fas fa-bread-slice"></i></span>
+                            <span class="allergen-icon" title="Latte"><i class="fas fa-cheese"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-price">€8,50</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Bruschette Category -->
+        <div class="category" id="bruschette">
+            <h2 class="category-title"><i class="fas fa-apple-alt"></i> Bruschette & Bruschettoni</h2>
+
+            <!-- Bruschette items here -->
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Antipasti Category -->
+        <div class="category" id="antipasti">
+            <h2 class="category-title"><i class="fas fa-utensils"></i> Antipasti della Casa</h2>
+
+            <!-- Antipasti items here -->
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Menu Fissi Category -->
+        <div class="category" id="menufissi">
+            <h2 class="category-title"><i class="fas fa-utensil-spoon"></i> Menu Fissi</h2>
+
+            <div class="menu-highlight">
+                <div class="name">MENU PIZZA</div>
+                <div class="item-description">
+                    <p>FRITTO MISTO - supplì, oliva ascolana, mozzarellina</p>
+                    <p>1 BRUSCHETTA AL POMODORO</p>
+                    <p>1 PIZZA A SCELTA dal menu</p>
+                    <p>1 BEVANDA MEDIA 50 cl (bibita alla spina, calice di vino o birra alla spina)</p>
+                </div>
+                <div class="menu-note">
+                    Ogni variazione sulla pizza + € 2,00
+                </div>
+                <div class="item-price">€24,90</div>
+            </div>
+
+            <div class="menu-highlight">
+                <div class="name">MENU KIDS</div>
+                <div class="menu-note">Valido per bambini fino a 10 anni - ogni piatto include bevanda</div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-name">
+                            <div class="name">140$ WURSTEL E PATATINE</div>
+                        </div>
+                        <div class="item-price">€8,50</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">
+                            <div class="name">1407 HAMBURGER AL PIATTO E PATATINE</div>
+                        </div>
+                        <div class="item-price">€9,00</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">
+                            <div class="name">1408 PANINO CON HAMBURGER, FORMAGGIO E PATATINE</div>
+                        </div>
+                        <div class="item-price">€9,50</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">
+                            <div class="name">1409 COTOLETTA DI POLLO E PATATINE</div>
+                        </div>
+                        <div class="item-price">€9,50</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">
+                            <div class="name">1410 PIZZA MARGHERITA MINI</div>
+                        </div>
+                        <div class="item-price">€7,50</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Birre Category -->
+        <div class="category" id="birre">
+            <h2 class="category-title"><i class="fas fa-beer"></i> Birre Artigianali</h2>
+
+            <!-- Birre items here -->
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Legenda Allergeni -->
+        <div class="allergen-key" id="allergeni">
+            <h3>Legenda Allergeni</h3>
+            <div class="allergen-list">
+                <div class="allergen-item">
+                    <div class="allergen-icon-lg">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <div>Glutine</div>
+                </div>
+                <div class="allergen-item">
+                    <div class="allergen-icon-lg">
+                        <i class="fas fa-shrimp"></i>
+                    </div>
+                    <div>Crostacei</div>
+                </div>
+                <div class="allergen-item">
+                    <div class="allergen-icon-lg">
+                        <i class="fas fa-egg"></i>
+                    </div>
+                    <div>Uova</div>
+                </div>
+                <div class="allergen-item">
+                    <div class="allergen-icon-lg">
+                        <i class="fas fa-fish"></i>
+                    </div>
+                    <div>Pesce</div>
+                </div>
+                <div class="allergen-item">
+                    <div class="allergen-icon-lg">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div>Arachidi</div>
+                </div>
+                <div class="allergen-item">
+                    <div class="allergen-icon-lg">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div>Soia</div>
+                </div>
+                <div class="allergen-item">
+                    <div class="allergen-icon-lg">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <div>Latte</div>
+                </div>
+                <div class="allergen-item">
+                    <div class="allergen-icon-lg">
+                        <i class="fas fa-cookie"></i>
+                    </div>
+                    <div>Frutta a guscio</div>
+                </div>
+                <div class="allergen-item">
+                    <div class="allergen-icon-lg">
+                        <i class="fas fa-carrot"></i>
+                    </div>
+                    <div>Sedano</div>
+                </div>
+                <div class="allergen-item">
+                    <div class="allergen-icon-lg">
+                        <i class="fas fa-mortar-pestle"></i>
+                    </div>
+                    <div>Senape</div>
+                </div>
+                <div class="allergen-item">
+                    <div class="allergen-icon-lg">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div>Sesamo</div>
+                </div>
+                <div class="allergen-item">
+                    <div class="allergen-icon-lg">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div>Anidride solforosa</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Il menu potrebbe subire variazioni. Informate il personale di eventuali allergie o intolleranze.</p>
+            <p>Servizio al tavolo - Tutti i prezzi includono IVA</p>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // Remove active class from all links
+                document.querySelectorAll('.nav-link').forEach(l => {
+                    l.classList.remove('active');
+                });
+
+                // Add active class to clicked link
+                this.classList.add('active');
+
+                // Scroll to target
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Highlight active navigation based on scroll position
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.category, .allergen-key');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
