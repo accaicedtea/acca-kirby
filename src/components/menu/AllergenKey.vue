@@ -13,23 +13,11 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { allergens } from '../../data/menuData.js';
 
-const allergens = ref([
-  { name: 'Glutine', icon: 'wheat-awn' },
-  { name: 'Crostacei', icon: 'shrimp' },
-  { name: 'Uova', icon: 'egg' },
-  { name: 'Pesce', icon: 'fish' },
-  { name: 'Arachidi', icon: 'seedling' }, // Icona generica, FontAwesome non ha un'icona per le arachidi
-  { name: 'Soia', icon: 'leaf' }, // Icona generica
-  { name: 'Latte', icon: 'cheese' },
-  { name: 'Frutta a guscio', icon: 'tree' }, // Icona generica
-  { name: 'Sedano', icon: 'carrot' }, // Icona generica
-  { name: 'Senape', icon: 'seedling' }, // Icona generica
-  { name: 'Sesamo', icon: 'circle-dot' }, // Icona generica aggiornata
-  { name: 'Anidride solforosa', icon: 'wine-bottle' }
-]);
+// Map the allergen info to include FontAwesome icons
+
 </script>
 
 <style scoped>

@@ -14,25 +14,16 @@
 </template>
 
 <script setup>
+import { allergens } from '../../data/menuData.js';
 
 defineProps({
   item: Object,
 });
 
 const allergenIcon = (allergen) => {
-  const icons = {
-    'Glutine': 'bread-slice',
-    'Latte': 'cheese',
-    'Uova': 'egg',
-    'Senape': 'mortar-pestle',
-    'Pesce': 'fish',
-    'Crostacei': 'shrimp',
-    'Vegetariano': 'seedling',
-    'Frutta a guscio': 'cookie',
-  };
-  return icons[allergen] || 'question-circle';
+  const found = allergens.find(a => a.name === allergen);
+  return found ? found.icon : 'question-circle';
 };
-
 </script>
 
 <style scoped>

@@ -11,22 +11,13 @@
 
 <script setup>
 import { ref } from 'vue';
+import { navLinks as navigationLinks } from '../../data/menuData.js';
 
 defineProps({
   activeCategory: String
 });
 
-const navLinks = ref([
-    { id: 'panini', target: '#panini', icon: 'fa-hamburger', text: 'Panini' },
-    { id: 'pizze', target: '#pizze', icon: 'fa-pizza-slice', text: 'Pizze' },
-    { id: 'insalate', target: '#insalate', icon: 'fa-leaf', text: 'Insalate' },
-    { id: 'piadine', target: '#piadine', icon: 'fa-bread-slice', text: 'Piadine' },
-    { id: 'bruschette', target: '#bruschette', icon: 'fa-apple-alt', text: 'Bruschette' },
-    { id: 'antipasti', target: '#antipasti', icon: 'fa-utensils', text: 'Antipasti' },
-    { id: 'menufissi', target: '#menufissi', icon: 'fa-utensil-spoon', text: 'Menu Fissi' },
-    { id: 'birre', target: '#birre', icon: 'fa-beer', text: 'Birre' },
-    { id: 'allergeni', target: '#allergeni', icon: 'fa-allergies', text: 'Allergeni' },
-]);
+const navLinks = ref(navigationLinks);
 </script>
 
 <style scoped>
