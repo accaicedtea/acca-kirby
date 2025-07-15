@@ -1,6 +1,6 @@
 <template>
   <Title
-    :image="slice1"
+    :image="slide1"
     title="Chi Siamo"
     alt="Chi Siamo"
     height="220px"
@@ -27,9 +27,9 @@
       </div>
       <div class="col-lg-6 d-flex gap-3 justify-content-lg-end justify-content-center">
         <div class="d-flex flex-column align-items-center w-100">
-          <img src="../assets/slide2.jpg" alt="Cocktail Kirby's" class="img-fluid rounded border border-2 mb-3"
+          <img :src="slide2" alt="Cocktail Kirby's" class="img-fluid rounded border border-2 mb-3"
         style="max-width:320px; max-height:320px; border-color:#bfa76f; background:#eee;" />
-          <img src="../assets/slide3.jpg" alt="Locale Kirby's" class="img-fluid rounded border border-2"
+          <img :src="slide3" alt="Locale Kirby's" class="img-fluid rounded border border-2"
         style="max-width:320px; max-height:320px; border-color:#bfa76f; background:#eee;" />
         </div>
       </div>
@@ -80,8 +80,11 @@
 </template>
 
 <script setup>
+import { getCurrentInstance } from 'vue';
 import Title from '../components/Title.vue';
-import slice1 from '../assets/slide1.jpg';
+
+const instance = getCurrentInstance();
+const { slide1, slide2, slide3 } = instance.appContext.config.globalProperties.$images;
 </script>
 
 <style scoped>

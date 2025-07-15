@@ -1,6 +1,6 @@
 <template>
     <Title
-    :image="slice1"
+    :image="slide1"
     title="Contattaci"
     alt="Contattaci"
     height="220px"
@@ -91,6 +91,9 @@
 </template>
 
 <script setup>
+import { getCurrentInstance } from 'vue';
 import Title from '../components/Title.vue';
-import slice1 from '../assets/slide1.jpg';
+
+const instance = getCurrentInstance();
+const { slide1 } = instance.appContext.config.globalProperties.$images;
 </script>

@@ -1,13 +1,22 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import Home from '../views/Home.vue';
-import Menu from '../views/Menu.vue';
-import Programma from '../views/Programma.vue';
-import Compleanni from '../views/Compleanni.vue';
-import Contattaci from '../views/Contattaci.vue';
-import ChiSiamo from '../views/ChiSiamo.vue';
-import NotFound from '../views/404.vue';
-import Privacy from '../views/Privacy.vue';
+// Code splitting automatico per ogni route
+const Home = () =>
+    import ('../views/Home.vue');
+const Menu = () =>
+    import ('../views/Menu.vue');
+const Programma = () =>
+    import ('../views/Programma.vue');
+const Compleanni = () =>
+    import ('../views/Compleanni.vue');
+const Contattaci = () =>
+    import ('../views/Contattaci.vue');
+const ChiSiamo = () =>
+    import ('../views/ChiSiamo.vue');
+const NotFound = () =>
+    import ('../views/404.vue');
+const Privacy = () =>
+    import ('../views/Privacy.vue');
 
 const routes = [
     { path: '/', component: Home },

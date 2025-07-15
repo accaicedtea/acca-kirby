@@ -1,0 +1,30 @@
+// Custom Bootstrap 5 build - Import solo quello che usi
+// 1. Include functions first (sempre necessarie)
+@import "bootstrap/scss/functions";
+// 2. Include variabili e mixins
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+// 3. Personalizza le variabili (opzionale)
+$primary: #ffc107;
+$secondary: #6c757d;
+$success: #198754;
+$warning: #ffc107;
+// 4. Include solo i componenti che usi effettivamente
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+// Layout utilities che usi
+@import "bootstrap/scss/utilities";
+// Components che usi nel progetto
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/modal";
+// Helper che usi
+@import "bootstrap/scss/helpers";
+// Utilities API per classi come d-flex, text-center, etc.
+@import "bootstrap/scss/utilities/api";

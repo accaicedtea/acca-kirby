@@ -5,6 +5,9 @@
             :alt="alt"
             class="w-100 h-100 object-fit-cover"
             :style="imgStyle"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
         />
         <h1
             class="position-absolute top-50 start-50 translate-middle text-white display-2 fw-bold fst-italic"
